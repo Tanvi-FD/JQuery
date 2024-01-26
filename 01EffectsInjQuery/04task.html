@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animate Effect</title>
+</head>
+<body>
+    <h1>Animate Effect In jQuery</h1>
+    <hr />
+    <button class="btnAnimate">Slide Up</button>
+    
+  
+    <hr />
+    <div class="box">This Is The Magic Of jQuery</div>
+
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script>
+        $("body").css({
+          backgroundColor: "tan",
+          textAlign: "center",
+        });
+        $("h1").css({
+          fontSize: "50px",
+          color: "brown",
+        });
+        $("button").css({
+          fontSize: "20px",
+          color: "pink",
+          backgroundColor: "green",
+          padding: "10px 30px",
+          borderRadius: "20px",
+        });
+        $(".box").css({
+          fontSize: "30px",
+          color: "white",
+          backgroundColor: "blueviolet",
+          padding: "10px 30px",
+          marginLeft: "10px",
+          borderRadius: "20px",
+          height: "200px",
+          width: "200px",
+          border: "5px solid lime",
+        });
+      </script>
+       <script>
+        $(document).ready(function () {
+          // Slide Up
+  
+          $(".btnAnimate").click(function () {
+            $(".box").animate({borderRadius: '50px', marginLeft: "1090px"}, 3000);
+          });
+  
+          
+     
+        });
+      </script>
+    
+</body>
+</html>

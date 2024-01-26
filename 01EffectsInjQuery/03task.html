@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JQuery</title>
+</head>
+<body>
+    <h1>CSS In jQuery</h1>
+    <hr />
+    <button class="btnShow">Show</button>
+    <button class="btnHide">Hide</button>
+    <button class="btnToggle">Toggle</button>
+    <hr />
+    <div class="box">This Is The Magic Of jQuery</div>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script>
+        $("body").css({
+          backgroundColor: "tan",
+          textAlign: "center",
+        });
+        $("h1").css({
+          fontSize: "50px",
+          color: "brown",
+        });
+        $("button").css({
+          fontSize: "20px",
+          color: "khaki",
+          backgroundColor: "brown",
+          padding: "10px 30px",
+          borderRadius: "20px",
+        });
+        $(".box").css({
+          fontSize: "30px",
+          color: "white",
+          backgroundColor: "blueviolet",
+          padding: "10px 30px",
+          margin: "10px 30px",
+          borderRadius: "20px",
+        });
+      </script>
+  
+      <!-- script -->
+  
+      <script>
+        $(document).ready(function () {
+          //Show
+  
+          $(".btnShow").click(function () {
+            $(".box").show();
+          });
+  
+          // Hide
+  
+          $(".btnHide").click(function () {
+            $(".box").hide();
+          });
+  
+          // Toggle
+  
+          $(".btnToggle").click(function () {
+            $(".box").Toggle();
+          });
+        });
+      </script>
+</body>
+</html>

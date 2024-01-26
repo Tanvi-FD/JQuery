@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancestor in JQuery</title>
+</head>
+<body>
+    <div class="great-grand-parent">
+        great-grand-parent
+        <div class="grand-parent">
+            gerand-parent
+            <div class="parent">
+                parent
+                <div class="child">child 1</div>
+                <div class="child">child 2</div>
+            </div>
+        </div>
+    </div>
+    <script src="../jquery-3.7.1.min.js"></script>
+    <script>
+        $("*").css({
+          backgroundColor: "pink",
+          textAlign: "center",
+          margin: "25px",
+          fontSize: "25px",
+        });
+      
+        
+        
+      </script>
+    <script>
+          // Parent 
+
+         $(document).ready(function (){
+            // $(".child").parent().css({ border: "5px solid green"});
+            // $(".parent").parent().css({ border: "5px solid red"});
+            // $(".grand-parent").parent().css({ border: "5px solid teal"});
+            // $(".great-grand-parent").parent().css({ border: "5px solid blue"});
+            // $("body").parent().css({ border: "3px solid orange"});
+
+            // Parents 
+
+        //    $(".child").parents().css({ border: "3px solid teal"});
+        //    $(".parent").parents().css({ border: "3px solid red"});
+        $(".grand-parent").parents().css({ border: "3px solid green"});
+        // $(".great-grand-parent").parents().css({ border: "3px solid black"});
+        // $("body").parents().css({ border: "3px solid blue"});
+
+        })
+    </script>
+</body>
+</html>
