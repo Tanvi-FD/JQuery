@@ -17,5 +17,44 @@
           </div>
         </div>
       </div>
+       <!-- jQuery -->
+
+    <script src="../jquery-3.7.1.min.js"></script>
+
+    <!-- Script In Which we are including jquery CSS  -->
+
+    <script>
+      $("*").css({
+          backgroundColor: "pink",
+          textAlign: "center",
+          margin: "25px",
+          fontSize: "25px",
+        });
+    </script>
+
+<!-- script -->
+
+<script>
+  $(document).ready(function () {
+
+
+    // children 
+    
+    // $(".parent").children().css({ border: "3px solid red"});
+    // $(".grand-parent").children().css({ border: "3px solid green"});
+    // $(".great-grand-parent").children().css({ border: "3px solid black"});
+    // $("body").children().css({ border: "3px solid blue"});
+    // $("html").children().css({ border: "3px solid blue"});
+
+    // find 
+    
+    $(".great-grand-parent").find('.parent').css({ border: "3px solid teal"});
+
+
+ 
+   
+  });
+</script>
+    
 </body>
 </html>
